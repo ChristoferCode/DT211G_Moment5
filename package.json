@@ -1,0 +1,19 @@
+{
+  "name": "real_boilerplate",
+  "version": "1.0.0",
+  "description": "Real Boilerplate. Mall at använda vid framtida projekt.",
+  "source": "src/index.html",
+  "browserlist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Christofer",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
+    "sass": "^1.85.0",
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,36 @@
+//Samlar här alla mina partials. Ibland kraschar Parcel när jag enbart har dem här...dock funkar ju att enbart ha denna filen länkad i mina HTML-filer.
+
+
+@use "abstracts/functions";
+@use "abstracts/keyframes";
+@use "abstracts/mixins";
+@use "abstracts/placeholders";
+@use "abstracts/variables";
+
+@use "base/body";
+@use "base/reset";
+@use "base/typography";
+
+@use "components/buttons";
+@use "components/images";
+@use "components/links";
+@use "components/logos";
+
+@use "layout/footer";
+@use "layout/header";
+@use "layout/main";
+@use "layout/menu";
+
+@use "pages/about";
+@use "pages/animering";
+@use "pages/color";
+@use "pages/contact";
+@use "pages/sass2";
+@use "pages/start";
+
+@use "themes/dark";
+@use "themes/light";
+
+@use "vendors/bootstrap";
+
+

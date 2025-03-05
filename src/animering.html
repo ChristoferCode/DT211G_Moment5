@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/index.scss">
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/menu.js" type="module"></script>
+    <script src="js/animations.js" type="module"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ba145e4c91.js" crossorigin="anonymous"></script>
+
+
+    <title>Moment 4 - CSS-preprocessorer - Animering</title>
+</head>
+<body>
+  
+
+    <div id="startcontainer">
+        <header>
+            <div id="header">
+                <p id="headertext"><a href="index.html" id="start"><span class="home"><i class="fa-solid fa-house"></i></span> Start</a></p>
+
+                <button id="open-menu">
+                    <span class="menutextopen">Meny</span>
+                    <span id="open-menu-icon">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </span>
+                </button>
+
+                <button id="close-menu">
+                    <span class="menutextclose">Stäng</span>
+                    <span id="close-menu-icon">
+                        <span class="bar1close"></span>
+                        <span class="bar2close"></span>
+                        <span class="bar3close"></span>
+                    </span>
+                </button>
+
+                <nav>
+
+                    <ul id="menu">
+                        <li>
+                            <a href="sass2.html" class="link"><div class="linkbutton">Sass</div></a>
+                        </li>
+                        <li>
+                            <a href="color.html" class="link"><div class="linkbutton">Color</div></a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="link"><div class="linkbutton">Om uppgiften</div></a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="link"><div class="linkbutton">Kontakt</div></a>
+                        </li>
+                        <li>
+                            <a href="animering.html" class="activelink"><div class="activelinkbutton">Animering</div></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <div id="main">
+    
+                <div class="images2">
+                    <div id="opacity">
+                    <picture>
+                        <source srcset="images/bokeh.jpg?as=avif" type="image/avif" />
+                        <img src="images/bokeh.jpg" class="startimage" width=1250 alt="Drömsk bakgrund i oskärpa i alla regnbågens färger" />
+                    </picture>
+                    </div>
+                </div>
+
+               <div id="crashtext">
+                
+                    <h1 class="bigheadlineanimate">Moment 4</h1>
+                    <h1 class="bigheadline2animate">Grafiska effekter med CSS</h1>
+                    
+                    <div class="images4">
+    
+                        <picture>
+                            <source srcset="images/sloth1.png?as=avif" type="image/avif" />
+                            <img src="images/sloth1.png" class="startimage4" width=1250 alt="Illustrerad sengångare med bandana" />
+                        </picture>
+        
+                    </div>
+                  
+                </div>
+    
+
+                <div class="images3">
+    
+                    <picture>
+                        <source srcset="images/ai_cat.jpg?as=avif" type="image/avif" />
+                        <img src="images/ai_cat.jpg" class="startimage3" width=1250 alt="AI-genererad illustartion på gullig rosa katt i magisk skog" />
+                    </picture>
+    
+                </div>
+                
+                <div id="impossiblebutton" class="buttonfromright">
+                    Laga bild-glitch
+                </div>
+
+            <div class="textblock">
+
+                <label for="who" class="who">Vem är du som besöker webbplatsen?</label>
+                <input type="text" id="who" name="who" placeholder="Skriv in ditt förnamn...">
+
+                <div class="images5">
+    
+                    <picture>
+                        <source srcset="images/sloth1.png?as=avif" type="image/avif" />
+                        <img src="images/sloth1.png" class="startimage5" width=1250 alt="Illustrerad sengångare med bandana" />
+                    </picture>
+    
+                </div>
+                   
+
+                <p class="brodtext2" id="answer">
+                    
+                </p>
+
+                <div id="tackbutton">
+                    <button id="tack" class="buttonfromright">
+                    TACK!
+                    </button>
+                </div>
+                
+                <p class="brodtext2" id="answer2">
+                    
+                </p>
+
+                <div id="njaabutton">
+                    <button id="njaa" class="buttonfromright">
+                    Njaa, det vet jag inte om vi är?!
+                    </button>
+                </div>
+
+                <p class="brodtext2" id="answer3">
+                    
+                </p>
+
+                <div id="okeeejbutton">
+                    <button id="okeeej" class="buttonfromright">
+                    OK?!
+                    </button>
+                </div>
+
+     
+            </div>
+
+
+            <div id="lookalike">
+
+                <div class="textblock">
+                    <h2 id="lookalikeh2">Hover for look-a-like! (ursäkta bild-stöld...)</h2>
+                </div>
+                
+                <div id="flipbilder">
+
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+
+                                <picture class="mattias">
+                                    <source srcset="images/mattias.png?as=webp&width=300&height=500" type="image/webp" />
+                                    <img src="images/mattias.png?width=300&height=500" alt="Mattias" />
+                                </picture>       
+                            
+                            </div>
+
+                            <div class="flip-box-back10">
+                                <picture class="mattin">
+                                    <source srcset="images/mattin.png?as=webp&width=300&height=500" type="image/webp" />
+                                    <img src="images/mattin.png?width=300&height=500" alt="Mattin" />
+                                </picture> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+
+                                <picture class="malin">
+                                    <source srcset="images/malin.png?as=webp&width=300&height=500" type="image/webp" />
+                                    <img src="images/malin.png?width=300&height=500" alt="Malin" />
+                                </picture>       
+                            
+                            </div>
+
+                            <div class="flip-box-back10">
+                                <picture class="malias">
+                                    <source srcset="images/malias.png?as=webp&width=300&height=500" type="image/webp" />
+                                    <img src="images/malias.png?width=300&height=500" alt="Malias" />
+                                </picture> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+          
+
+            </div>
+
+            <div id="main2"></div>
+
+            <div class="textblock">
+
+
+                <div id="reactionbuttons">
+                    <div id="reaction1button">
+                        <button id="like" class="buttonfromright">
+                        Faktiskt lite likt! <br>Du är godkänd!
+                        </button>
+                    </div>
+                    <div id="reaction2button">
+                        <button id="dislike" class="buttonfromright">
+                        Är kränkt! <br>Du är INTE godkänd!
+                        </button>
+                    </div>
+                </div>
+
+                <p class="brodtext2" id="answer4">
+                    
+                </p>
+
+                <p class="brodtext2" id="answer5">
+                    
+                </p>
+
+                <h2 class="countdown" id="answer6">
+                    
+                </h2>
+
+      
+            </div>
+            
+                <div id="logosshake">
+
+                    <div id="logo7shake">
+                        <img src="logos/Sass.png" class="logos" width=60 alt="Sass logo" />
+                    </div>
+                    <div id="logo1shake">
+                        <img src="logos/Git-Logo-2Color2.png" class="logos" width=90 alt="Git logo" />
+                    </div>
+                    <div id="logo2shake">
+                        <img src="logos/nodejsStackedDark.png" class="logos" width=100 alt="Node.js logo"/>
+                    </div>
+                    <div id="logo3shake">
+                        <div id="box"><img src="logos/parcelbox.png"  class="logos" width=40 alt="Parcel box logo"/></div>
+    
+                        <div><img src="logos/logo_red.png" class="logos" width=100 alt="Parcel text logo"/></div>
+                    </div>
+                    <div id="logo4shake">
+                        <div id="cat"><img src="logos/github-mark.png" class="logos" width=35 alt="Github cat logo"/></div>
+    
+                        <div><img src="logos/GitHub_Logo.png" class="logos" width=100 alt="Github text lgoo"/></div>
+                    </div>
+                    <div id="logo5shake">
+                        <img src="logos/logo-netlify-large-fullcolor-lightmode.png" class="logos" width=100 alt="Netlify logo"/>
+                    </div>
+                   
+                </div>
+
+                <div id="logosdarkthemeshake">
+
+                    <div id="logo7darkshake">
+                        <img src="logos/Sass_white.png" class="logos" width=60 alt="Sass logo" />
+                    </div>
+                    <div id="logo1darkshake">
+                        <img src="logos/Git-Logo-White.png" class="logos" width=90 alt="Git logo" />
+                    </div>
+                    <div id="logo2darkshake">
+                        <img src="logos/nodejsStackedLight.png" class="logos" width=100 alt="Node.js logo"/>
+                    </div>
+                    <div id="logo3darkshake">
+                        <div id="boxdark"><img src="logos/parcelbox.png"  class="logos" width=40 alt="Parcel box logo"/></div>
+    
+                        <div><img src="logos/logo_beige.png" class="logos" width=100 alt="Parcel text logo"/></div>
+                    </div>
+                    <div id="logo4darkshake">
+                        <div id="catdark"><img src="logos/github-mark-white.png" class="logos" width=35 alt="Github cat logo"/></div>
+    
+                        <div><img src="logos/GitHub_Logo_White.png" class="logos" width=100 alt="Github text lgoo"/></div>
+                    </div>
+                    <div id="logo5darkshake">
+                        <img src="logos/logo-netlify-large-fullcolor-darkmode.png" class="logos" width=100 alt="Netlify logo"/>
+                    </div>
+                   
+                </div>
+    
+            </div>
+        </section>
+
+        <footer>
+        
+            <div id="footer">
+    
+                <p id="footertext">Denna webbplats är skapad av <a href="https://github.com/ChristoferCode" id="mingithub"><span id="name">Christofer Hansson</span></a> 2025, för Moment 3 i kursen DT211G, Frontend-baserad webbutveckling på Webb&shy;utvecklings&shy;programmet vid Mittuniversitetet. </p>
+                
+                <div id="netlify">
+                        
+                        <div id="logo6">
+                            <a href="https://github.com/ChristoferCode"><img src="logos/github-mark-white.png" class="logos" width=50 alt="Github cat logo"/></a>
+                        </div>  
+    
+    
+                    <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-accent.svg" alt="Deploys by Netlify" /> </a>
+    
+                </div>
+    
+            </div>
+    
+        </footer>
+    </div>
+
+    <div id="closinggate">
+        <div class="images2">
+            <picture>
+                <source srcset="images/metal_door_long_graffiti.png?as=avif" type="image/avif" />
+                <img src="images/metal_door_long_graffiti.png" class="startimage" width=2500 alt="Drömsk bakgrund i oskärpa i alla regnbågens färger" />
+            </picture>
+        </div>
+    </div>
+</body>
+</html>
