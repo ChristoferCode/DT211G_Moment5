@@ -123,7 +123,7 @@ console.log("Kör funktionen dataToBarChart...");
 let options = {
     chart: {
       type: 'bar',
-      height: '80%',
+      height: '400px',
     },
     plotOptions: {
         bar: {
@@ -150,7 +150,11 @@ let options = {
 
     yaxis: {
         title: {
-        text: 'Antal sökande'
+        text: 'Antal sökande',
+            style: {
+            fontSize: '12px',
+            fontWeight: 'bold'
+        }
         }
       },
 
@@ -230,7 +234,6 @@ let options2 = {
     series: top5ProgramApplInt,
     chart: {
     width: 680,
-    height: '50%',
     type: 'pie',
     },
     
