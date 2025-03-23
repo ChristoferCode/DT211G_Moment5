@@ -15,9 +15,6 @@ let top5ProgramAppl = [];
 let top5ProgramNames = [];
 
 
-let jstest1El = document.querySelector(".jstest1");
-let jstest2El = document.querySelector(".jstest2");
-
 
 window.onload = () => {
     getData();
@@ -126,7 +123,7 @@ console.log("Kör funktionen dataToBarChart...");
 let options = {
     chart: {
       type: 'bar',
-      height: '100%',
+      height: '80%',
     },
     plotOptions: {
         bar: {
