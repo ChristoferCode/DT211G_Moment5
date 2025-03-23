@@ -123,7 +123,7 @@ console.log("Kör funktionen dataToBarChart...");
 let options = {
     chart: {
       type: 'bar',
-      height: '400px',
+      height: '800px',
     },
     plotOptions: {
         bar: {
@@ -234,6 +234,7 @@ let options2 = {
     series: top5ProgramApplInt,
     chart: {
     width: 680,
+    height: '800px',
     type: 'pie',
     },
     
