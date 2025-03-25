@@ -123,11 +123,21 @@ console.log("Kör funktionen dataToBarChart...");
 let options = {
     chart: {
       type: 'bar',
-      height: '800px',
+      height: '600px',
     },
     plotOptions: {
         bar: {
-            distributed: true
+            distributed: true,
+        },
+    },
+    legend: {
+        labels: {
+        //   colors: 'rgb(0, 255, 42)', 
+        },
+    },
+    dataLabels: {
+        style: {
+          colors: ['rgb(255, 255, 255)'],
         }
     },
  
@@ -153,8 +163,14 @@ let options = {
         text: 'Antal sökande',
             style: {
             fontSize: '12px',
-            fontWeight: 'bold'
-        }
+            fontWeight: 'bold',
+            fontFamily:  undefined,
+            }
+        },
+        labels: {
+            style: {
+                color: ['rgb(0, 255, 60)'],
+            }
         }
       },
 
@@ -164,7 +180,9 @@ let options = {
         margin: 50,
         style: {
             fontSize: '14px',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            fontFamily:  undefined,
+            color: 'rgb(30, 255, 0)'
         }
     },
 
@@ -183,7 +201,9 @@ let options = {
                 margin: 50,
                 style: {
                     fontSize: '14px',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    fontFamily:  undefined,
+                    color: 'rgb(217, 102, 255)'
                 }
             },
         
@@ -193,7 +213,9 @@ let options = {
                 margin: 50,
                 style: {
                     fontSize: '14px',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    fontFamily:  undefined,
+                    color: 'rgb(217, 102, 255)'
                 }
             },
         }
@@ -233,7 +255,7 @@ console.log("Kör funktionen dataToPieChart...");
 let options2 = {
     series: top5ProgramApplInt,
     chart: {
-    width: 680,
+    width: 500,
     height: '800px',
     type: 'pie',
     },
@@ -241,13 +263,38 @@ let options2 = {
 
   labels: top5ProgramNames,
 
-    title: {
-    text: 'Topp 5 mest sökta programmen på Mittuniversitetet HT24',
+  title: {
+    text: 'Topp 5 mest sökta programmen',
     align: 'left',
     margin: 50,
     style: {
         fontSize: '14px',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontFamily:  undefined,
+        
+        }
+    },
+  subtitle: {
+    text: 'på Mittuniversitetet HT24',
+    align: 'left',
+    margin: 50,
+    style: {
+        fontSize: '14px',
+        fontWeight: 'bold',
+        fontFamily:  undefined,
+       
+        }
+    },
+
+    legend: {
+        labels: {
+        // colors: 'rgb(0, 255, 42)', 
+        },
+    },
+
+    dataLabels: {
+        style: {
+          colors: ['rgb(255, 255, 255)'],
         }
     },
 
@@ -270,7 +317,9 @@ let options2 = {
         margin: 50,
         style: {
             fontSize: '14px',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            fontFamily:  undefined,
+            color: 'rgb(217, 102, 255)'
             }
         },
       subtitle: {
@@ -279,7 +328,9 @@ let options2 = {
         margin: 50,
         style: {
             fontSize: '14px',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            fontFamily:  undefined,
+            color: 'rgb(217, 102, 255)'
         }
     },
 

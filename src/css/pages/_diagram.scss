@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 #chart1 {
     margin-bottom: 100px;
 }
@@ -5,4 +7,31 @@
 
 #chart2 {
     margin-bottom: 100px;
+}
+
+.apexcharts-title-text {
+    fill: $apexcharts-color-light; 
+}
+
+.apexcharts-subtitle-text {
+    fill: $apexcharts-color-light; 
+}
+
+.apexcharts-yaxis-label {
+    fill: $apexcharts-label-color-light; 
+}
+
+.apexcharts-legend-text {
+    color: $apexcharts-label-color-light; 
+}
+
+.apexcharts-yaxis-title-text {
+    fill: $apexcharts-color-light; 
+}
+
+
+
+
+.apexcharts-xaxis-label {
+    fill: #ff5733;  
 }

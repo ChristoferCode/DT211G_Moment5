@@ -89,4 +89,31 @@
         display: flex;
     }
 
+
+
+
+    .apexcharts-title-text {
+        fill: $apexcharts-color-dark; 
+    }
+
+    .apexcharts-subtitle-text {
+        fill: $apexcharts-color-dark; 
+    }
+    
+    .apexcharts-yaxis-label {
+        fill: $apexcharts-label-color-dark; 
+    }
+
+    .apexcharts-legend-text {
+        color: $apexcharts-label-color-dark !important; 
+    }
+
+    .apexcharts-text {
+        fill: $apexcharts-label-color-dark; 
+    }
+    
+    .apexcharts-yaxis-title-text {
+        fill: $apexcharts-color-dark; 
+    }
+
 }
