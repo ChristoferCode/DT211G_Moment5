@@ -117,4 +117,11 @@
         fill: $apexcharts-color-dark; 
     }
 
+
+    #map { 
+        border: 10px solid $bodybg-color-dark;
+        filter: sepia(0%);
+        box-shadow: $bigheadline-shadow-dark 1px 1px 20px;
+    }
+
 }

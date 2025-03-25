@@ -7,8 +7,18 @@
 
     <link rel="stylesheet" href="css/index.scss">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
     <script src="js/main.js" type="module"></script>
     <script src="js/menu.js" type="module"></script>
+    <script src="js/map.js" type="module"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,12 +106,14 @@
                         Bla bla bla...
                         </p>
 
-                        <label for="who" class="who">Välj en plats i världen, vilken som helst!</label>
-                        <input type="text" id="who" name="who" placeholder="Skriv in en adress, inklusive stad och land">
+                        <label for="where" class="where">Välj en plats i världen, vilken som helst!</label>
+                        <input type="text" id="where" name="where" placeholder="Skriv in en adress, inklusive stad och land">
              
                     
                     
                 </div>
+
+                <div id="map"></div>
       
                 <div id="logos">
 
