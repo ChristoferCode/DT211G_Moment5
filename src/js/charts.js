@@ -121,23 +121,64 @@ console.log("Kör funktionen dataToBarChart...");
     console.log(top6CourseNames);
 
 let options = {
+
     chart: {
       type: 'bar',
       height: '600px',
+      width: '100%'
     },
+
+    noData: {
+        text: 'Loading...',
+        align: 'center',
+        verticalAlign: 'middle',
+        offsetX: 0,
+        offsetY: 0,
+        style: {
+          color: undefined,
+          fontSize: '14px',
+          fontFamily: undefined
+        }
+    },
+
     plotOptions: {
         bar: {
             distributed: true,
         },
     },
+
     legend: {
+        show: true,
         labels: {
         //   colors: 'rgb(0, 255, 42)', 
         },
+        position: 'bottom',  
+        horizontalAlign: 'center', 
+        verticalAlign: 'top', 
+        floating: false, 
+        itemMargin: {
+            horizontal: 5,
+            vertical: 8
+        },
+        onItemClick: {
+            toggleDataSeries: true
+          },
+        onItemHover: {
+            highlightDataSeries: true
+          },
     },
+
     dataLabels: {
         style: {
           colors: ['rgb(255, 255, 255)'],
+          dropShadow: {
+            enabled: false,
+            top: 0,
+            left: 0,
+            blur: 3,
+            opacity: 0.5,
+            color: '#000',
+          }
         }
     },
  
@@ -171,13 +212,14 @@ let options = {
             style: {
                 color: ['rgb(0, 255, 60)'],
             }
-        }
+        },
+        tickAmount: 10,  // Ställer in antalet ticks på y-axeln till 5
       },
 
     title: {
         text: 'Topp 6 mest sökta kurserna på Mittuniversitetet HT24',
         align: 'left',
-        margin: 50,
+        margin: 100,
         style: {
             fontSize: '14px',
             fontWeight: 'bold',
@@ -186,11 +228,41 @@ let options = {
         }
     },
 
-
-
     fill: {
-        colors: ['rgb(84, 12, 92)', 'rgb(217, 102, 255)']
+        colors: ['rgb(84, 12, 92)', 'rgb(217, 102, 255)'],
+        type: 'gradient',
+        gradient: {
+          shade: 'dark',
+          type: "vertical",
+          shadeIntensity: 0.3,
+          gradientToColors: undefined, 
+          inverseColors: false,
+          opacityFrom: 1,
+          opacityTo: 1,
+          stops: [0, 70, 100],
+        //   colorStops: [ 
+        //     [
+        //       {
+        //         offset: 0,
+        //         color: 'rgb(84, 12, 92)',
+        //         opacity: 1
+        //       },
+        //       {
+        //         offset: 50,
+        //         color: 'rgb(217, 102, 255)',
+        //         opacity: 1
+        //       },
+        //       {
+        //         offset: 100,
+        //         color: 'rgb(84, 12, 92)',
+        //         opacity: 1
+        //       }
+        //     ],
+        //   ]
+        }
     },
+
+
 
     responsive: [{
         breakpoint: 580,
@@ -253,20 +325,22 @@ console.log("Kör funktionen dataToPieChart...");
 
 
 let options2 = {
-    series: top5ProgramApplInt,
+
     chart: {
-    width: 500,
-    height: '800px',
+    width: '100%',
+    height: '700px',
     type: 'pie',
     },
     
+    series: top5ProgramApplInt,
+
 
   labels: top5ProgramNames,
 
   title: {
-    text: 'Topp 5 mest sökta programmen',
+    text: 'Topp 5 mest sökta programmen på Mittuniversitetet HT24',
     align: 'left',
-    margin: 50,
+    margin: 100,
     style: {
         fontSize: '14px',
         fontWeight: 'bold',
@@ -274,67 +348,107 @@ let options2 = {
         
         }
     },
-  subtitle: {
-    text: 'på Mittuniversitetet HT24',
-    align: 'left',
-    margin: 50,
-    style: {
-        fontSize: '14px',
-        fontWeight: 'bold',
-        fontFamily:  undefined,
-       
+
+    noData: {
+        text: 'Loading...',
+        align: 'center',
+        verticalAlign: 'middle',
+        offsetX: 0,
+        offsetY: 0,
+        style: {
+          color: undefined,
+          fontSize: '14px',
+          fontFamily: undefined
         }
     },
 
     legend: {
+        show: true,
         labels: {
         // colors: 'rgb(0, 255, 42)', 
         },
+        position: 'bottom',  
+        horizontalAlign: 'center', 
+        verticalAlign: 'top', 
+        floating: false, 
+        itemMargin: {
+            horizontal: 5,
+            vertical: 8
+        },
+        onItemClick: {
+            toggleDataSeries: true
+          },
+        onItemHover: {
+            highlightDataSeries: true
+          },
     },
 
     dataLabels: {
         style: {
           colors: ['rgb(255, 255, 255)'],
-        }
+        },
+        dropShadow: {
+            enabled: true,
+            top: 0,
+            left: 0,
+            blur: 3,
+            opacity: 0.5,
+            color: 'rgb(0, 0, 0)',
+          }
     },
 
     fill: {
-    colors: ['rgb(84, 12, 92)', 'rgb(217, 102, 255)','rgb(143, 21, 157)', 'rgb(213, 117, 245)','rgb(56, 7, 61)']
+    colors: ['rgb(84, 12, 92)', 'rgb(217, 102, 255)','rgb(143, 21, 157)', 'rgb(186, 19, 242)','rgb(56, 7, 61)'],
+    type: 'gradient',
+    gradient: {
+      shade: 'dark',
+      type: "horizontal",
+      shadeIntensity: 0.5,
+      gradientToColors: undefined, 
+      inverseColors: true,
+      opacityFrom: 1,
+      opacityTo: 1,
+      stops: [0, 70, 100],
+      colorStops: []
+    }
     },
 
     responsive: [{
-    breakpoint: 580,
-    options2: {
-      chart: {
-        width: 200
-      },
-      legend: {
-        position: 'bottom'
-      },
-      title: {
-        text: 'Topp 5 mest sökta programmen',
-        align: 'left',
-        margin: 50,
-        style: {
-            fontSize: '14px',
-            fontWeight: 'bold',
-            fontFamily:  undefined,
-            color: 'rgb(217, 102, 255)'
-            }
-        },
-      subtitle: {
-        text: 'på Mittuniversitetet HT24',
-        align: 'left',
-        margin: 50,
-        style: {
-            fontSize: '14px',
-            fontWeight: 'bold',
-            fontFamily:  undefined,
-            color: 'rgb(217, 102, 255)'
-        }
-    },
+        breakpoint: 580,
+        options: {
+            chart: {
+                width: '100%',
+                height: '600px',
+            },
+            legend: {
+                position: 'bottom'
+            },
 
-    }
+            title: {
+                text: 'Topp 5 mest sökta programmen',
+                align: 'left',
+                margin: 50,
+                style: {
+                    fontSize: '14px',
+                    fontWeight: 'bold',
+                    fontFamily:  undefined,
+                    // color: 'rgb(217, 102, 255)'
+                    }
+                },
+
+            subtitle: {
+                text: 'på Mittuniversitetet HT24',
+                align: 'left',
+                margin: 50,
+                style: {
+                    fontSize: '14px',
+                    fontWeight: 'bold',
+                    fontFamily:  undefined,
+                    // color: 'rgb(217, 102, 255)'
+                }
+            },
+
+        }
     }]
 }
 
