@@ -103,17 +103,27 @@
                     <h2>Hitta din plats på kartan!</h2>
     
                         <p class="brodtext">
-                        Bla bla bla...
+                        På kartan nedan kan du söka ut vilken adress i världen som helst, eller varför inte söka på en verksamhet, som hotell eller bageri, i en stad du vill resa till? Skriv bara in din sökfras i sökfältet och tryck enter och låt kartan guida dig! Zooma in eller zooma ut och flytta dig runt genom att hålla in handen och dra åt önskad riktning. 
                         </p>
 
+
+                    
+                    <form id="search">
                         <label for="where" class="where">Välj en plats i världen, vilken som helst!</label>
                         <input type="text" id="where" name="where" placeholder="Skriv in en adress, inklusive stad och land">
-             
-                    
+                    </form>
+
+                    <p class="soktraff" id="location"></p>
+                    <p class="soktraff"><span id="latitud"></span><span id="longitud"></span></p>
                     
                 </div>
 
                 <div id="map"></div>
+
+                <div class="textblock">
+                    <h2>Dokumentation av JavaScript-kod</h2>
+                    <p class="brodtext">Länk till JSDoc dokumentation för JavaScript-koden till detta moment: <a href="#" id="JSDoc">JSDoc</a></p>
+                </div>
       
                 <div id="logos">
 

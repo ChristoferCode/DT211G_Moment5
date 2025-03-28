@@ -5,9 +5,16 @@
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     border-radius: 20px;
     border: 10px solid $bodybg-color-dark;
     filter: sepia(30%);
+    box-shadow: $bigheadline-shadow-light 1px 1px 10px;
+}
+
+#map:hover { 
+    border-radius: 20px;
+    border: 10px solid $bodybg-color-dark;
+    filter: sepia(0%);
     box-shadow: $bigheadline-shadow-light 1px 1px 20px;
 }

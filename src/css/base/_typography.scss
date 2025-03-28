@@ -119,6 +119,7 @@ h2 {
     font-family: $font-stack1;
     font-size: 2.4rem;
     line-height: 3.6rem;
+    font-weight: 700;
     text-align: left;
     color:  $h2-color-light;
     margin-bottom: 0px;
@@ -136,7 +137,35 @@ h2 {
     padding: 5px;
     border: 2px solid $bodybg-color-dark;
     border-radius: 10px;
+    box-shadow: $bigheadline-shadow-light 1px 1px 10px;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 95%;
+
+}
+
+#where:hover {
+    border: 2px solid $bodybg-color-dark;
+    border-radius: 10px;
     box-shadow: $bigheadline-shadow-light 1px 1px 20px;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+#search {
+    width: 100%;
+}
+
+.soktraff {
+    font-family: $font-stack1;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: $brodtext-color-light;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+#JSDoc {
+    color: $brodtext-color-light;
 }
 
 .countdown {

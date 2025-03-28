@@ -119,9 +119,23 @@
 
 
     #map { 
-        border: 10px solid $bodybg-color-dark;
-        filter: sepia(0%);
+        box-shadow: $bigheadline-shadow-dark 1px 1px 10px;
+    }
+
+    #map:hover { 
         box-shadow: $bigheadline-shadow-dark 1px 1px 20px;
+    }
+
+    .where {
+        color:  $h2-color-dark;
+    }
+
+    .soktraff {
+        color: $brodtext-color-dark;
+    }
+
+    #JSDoc {
+        color: $brodtext-color-dark;
     }
 
 }
