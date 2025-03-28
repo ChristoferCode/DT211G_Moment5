@@ -15,12 +15,13 @@ let top5ProgramAppl = [];
 let top5ProgramNames = [];
 
 
-
+//Kör funktionen getData vid inläsning av sidan
 window.onload = () => {
     getData();
 }
 
-//Funktion som fetchar API från en url med async/await för att invänta att svaret hinner komma, samt try/catch för att kunna leverera ett felmedelande om något misslyckats men ändå kör vidare koden (vilket är ganska meningslöst i det här fallet eftersom den inte kan göra något utan API-datan...)
+
+//Funktion som fetchar API från en url med async/await för att invänta att svaret hinner komma, samt try/catch för att kunna leverera ett felmedelande om något misslyckats men ändå kör vidare koden
 async function getData() {
 
     try {
@@ -36,10 +37,12 @@ async function getData() {
         barChart(data);
         pieChart(data);
 
+    //Skriver ut felmeddelande till consol log om något fel uppstår vid inhämtningen av data från API
     } catch (error) {
         console.error("Det har uppstått ett fel: ", error);
     }
 }
+
 
 //Funktion som filtrerar min array med alla kurser och alla program
 function barChart(data) {
@@ -65,7 +68,6 @@ function barChart(data) {
     top6Courses = sortedCourses.slice(0, 6);
     console.log("Top 6 kurser...");
     console.log(top6Courses);
-
 
 
     //Kör funktionen dataToBarChart igen men med den filtrerade, sorterade och avskalade arrayen
@@ -102,8 +104,6 @@ function pieChart(data) {
     //Kör funktionen dataToPieChart igen men med den filtrerade, sorterade och avskalade arrayen
     dataToPieChart(top5Programs);
 }
-
-
 
 
 function dataToBarChart(top6Courses) {
@@ -292,13 +292,13 @@ let options = {
             },
         }
     }]
-
 }
   
 let chart = new ApexCharts(document.querySelector("#chart1"), options);
 console.log(options);
 
 chart.render();
+
 }
 
 
@@ -447,7 +447,6 @@ let options2 = {
                     // color: 'rgb(217, 102, 255)'
                 }
             },
-
         }
     }]
 }

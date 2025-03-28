@@ -122,7 +122,7 @@
         box-shadow: $bigheadline-shadow-dark 1px 1px 10px;
     }
 
-    #map:hover { 
+    #map:hover,  #map:focus { 
         box-shadow: $bigheadline-shadow-dark 1px 1px 20px;
     }
 

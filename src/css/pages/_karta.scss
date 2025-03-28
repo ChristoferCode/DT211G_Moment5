@@ -12,9 +12,25 @@
     box-shadow: $bigheadline-shadow-light 1px 1px 10px;
 }
 
-#map:hover { 
+#map:hover, #map:focus { 
     border-radius: 20px;
     border: 10px solid $bodybg-color-dark;
     filter: sepia(0%);
     box-shadow: $bigheadline-shadow-light 1px 1px 20px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    #map { 
+        height: 600px; 
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border: 10px solid $bodybg-color-dark;
+        filter: sepia(30%);
+        box-shadow: $bigheadline-shadow-light 1px 1px 10px;
+    }
 }
