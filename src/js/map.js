@@ -26,7 +26,6 @@ const longitudEl = document.querySelector("#longitud");
 searchField.addEventListener("submit", encodeSearch);
 
 
-
 /** 
 * //Visar Gögeborg på kartan (zoomgrad 12) vid sidinladdning
 * @param {number} startlat - Latitud för Göteborg
